@@ -6,12 +6,11 @@ var tweetButton = document.getElementById("tweet-me");
 
 function updateQuote(){
 	//Get random quote and store in currentQuote
-	quote = (quotes[Math.floor(Math.random()*quotes.length)]);
+	quote = quotes[Math.floor(Math.random()*quotes.length)];
 	//Update quote text
 	quoteEl.innerHTML = quote;
 	//Update twitter button url
-	var twitterURL = 'https://twitter.com/intent/tweet?text=' + encodeURI(quote + " -Nhat Hanh");
-	tweetButton.href = twitterURL;
+	tweetButton.href = 'https://twitter.com/intent/tweet?text=' + encodeURI(quote + " -Nhat Hanh");
 }
 
 //When button gets clicked:
@@ -20,6 +19,7 @@ newButton.addEventListener('click', function(){
 	updateQuote();
 })
 
+//load a quote once page loads
 window.onload = function(){
 	updateQuote();
 }

@@ -1,0 +1,41 @@
+body {
+	background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/bedge_grunge.png');
+	background-repeat: repeat;
+}
+
+#heading{
+	text-align: center; 
+	margin: 0;
+	color: darkgreyDarkSlateGray;
+}
+
+#quote {
+	width: 500px;
+	padding: 20px;
+	height: 100px;
+	margin: 40px auto;
+	text-align: left;
+	display: table;
+	background: RGBA(45, 18, 44, .4);
+	color: lightgrey;
+}
+
+#middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#quote p {
+	text-align: right;
+}
+#buttons{
+	text-align: center;
+}
+
+a {
+	background: RGBA(45, 18, 44, .6);
+	padding: 10px;
+	color: lightgrey;
+	text-decoration: none;
+}
+
